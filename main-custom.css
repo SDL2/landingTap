@@ -8,8 +8,25 @@
 }
 
 .bg-section2{
+    background-color: #eff3f6;
+}
+
+.bg-section3{
     background-color: #1D42B1;
 }
+
+.bg-section4{
+    background-color: #88D65C;
+}
+
+.txt-section2{
+    color: #1d42b1;
+}
+
+.txt-section4{
+    color: #1335B9;
+}
+
 
 /* para miniseccion del menu,, despues xD */
 .menu_burger{
