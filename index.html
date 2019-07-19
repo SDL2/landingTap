@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="main-custom.css">
 
@@ -150,7 +149,7 @@
         </div>
     </section>
     
-    <section class="">
+    <section class="bg-section2">
         <div class="flex lg:flex-row flex-col h-full items-center justify-between">
             <div class="lg:order-2 justify-start">
                 <img class="w-img-sec6 h-auto lg:h-img-sec6" src="images/desk.png" alt="">
@@ -169,9 +168,121 @@
     </section>
 
 
-    <section></section>
+    <section class="mb-12">
+        <div class="w-full container">
 
+            <div class="text-center py-10">
+                <h1 class="text-4xl font-extrabold txt-section4 mb-5">FAQ'S</h1>
+                <p class="c">Guía general de uso de la aplicación y preguntas frecuentes</p>
+            </div>
+            <div class="py-2">
+
+
+                <ul id="mainlist" class="lg:ml-40 ml-24">
+                    <li class="">
+                        <button id="b1" onclick="mostrar" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>¿Que es Tap the App?</button>
+                        
+                        <ul id="bl1" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">En TapApp somos una empresa dedicada a proporcionar una solución en cuanto al flujo de información entre tus clientes y tu establecimiento.</p>
+                                <p class="pb-5 ml-20">Hoy en día, existe una gran demanda tecnológica de parte de los consumidores finales en cuanto a encontrar una solución para agendar una cita. Según investigaciones, 91% de personas encontrarían útil una aplicación celular para solucionar dicha problemática, y aquí es donde TapApp entra en juego.</p>
+                                <p class="pb-5 ml-20">TapApp no solamente elimina el problema de interacción entre establecimiento-consumidor por medio de una plataforma moderna, la cual simplifica la comunicación entre los interesados, sino que también reduce la cantidad de “no-shows ”, mejorando así tus ingresos, te proporciona una plataforma para darte a conocer y te facilita poderosa y útil reportaría por medio de un web service estructurado acorde a tu negocio.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b2" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>Como usuario de la app, ¿Puedo re-agendar una cita a la que ya no podre asistir?</button>
+                        
+                        <ul id="bl2" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">¡Claro! nada más entra a tu menú de reservas generadas, entra a la reserva que quieras modificar y reprograma tu reserva para cuando puedas asistir. Tambien puedes modificarla cuando te llegue la notificación de recordatorio automático, dale click al botón re-agendar y reprograma tu cita.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b3" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>Cómo usuario de la app, ¿como me califican?</button>
+                        
+                        <ul id="bl3" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">Eres calificado según la cantidad de citas re-agendadas (entre más reprogrames, peor tu calificación), la cantidad de veces que canceles (entre más canceles, peor tu calificación) una cita y tu puntualidad (entre más puntual, mejora tu calificación)</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b4" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>Como usuario de la app, ¿que tengo que pagar?</button>
+                        
+                        <ul id="bl4" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">Absolutamente ¡NADA! la app es gratuita y te la puedes descargar ya sea en la App Store de Apple o Google Play para Android.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b5" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>¿Qué pasa si como usuario de la app tengo una mala calificación?</button>
+                        
+                        <ul id="bl5" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">Si tienes una mala calificación, los establecimientos a los que hagas una cita serán automáticamente notificados de tu calificación y ellos podrán elegir si aprobarte o denegarte tu cita.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b6" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>Como establecimiento, ¿Cómo me califican?</button>
+                        
+                        <ul id="bl6" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">Tus clientes, al finalizar la cita, te calificaran por medio de la app dependiendo de tu servicio, puntualidad, precio, etc.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b7" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>Como establecimiento, ¿puedo mejorar mi plan?</button>
+                        
+                        <ul id="bl7" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">¡Claro! Nada más entra a tu dashboard asignado, dale click al botón en la parte superior derecha a la pantalla donde indica el número de días en el que vence tu plan y elige tu nuevo plan.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b8" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>Como establecimiento, ¿Qué pasa si llego al límite de citas agendadas? (ver tu plan)</button>
+                        
+                        <ul id="bl8" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">Una vez que hayas alcanzado el límite de citas según tu plan, tus clientes no podrán reservar más citas.</p>
+                                <p class="pb-5 ml-20">En caso de que te actualices a un paquete superior, instantáneamente tendrá acceso a más citas, o puedes esperar hasta que se actualice el recuento de citas. El recuento se actualizará cada 30 días después de que te hayas registrado o 30 días después de haber actualizado a uno de nuestros paquetes.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <button id="b9" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>Como establecimiento, ¿a que reporteria tengo acceso?</button>
+                        
+                        <ul id="bl9" class="hidden">
+                            <li>
+                                <p class="pb-5 ml-20">Solamente al contar con un plan premium podrás tener acceso a una amplia gama de reporteria, necesaria para poder manejar adecuadamente tu negocio, desarrollandolo de manera continua y certera.</p>
+                                <p class="pb-5 ml-20">La reporteria en el plan premium incluye desde reportes de venta, reporteria de reservas, de tus clientes y tus empleados, así como la efectividad de tus promociones y la distribución de tu tiempo.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    
+    
 
     <script src="scrpt/utils.js"></script>
+    <script src="https://kit.fontawesome.com/aef3a54bf3.js"></script>
 </body>
 </html>
