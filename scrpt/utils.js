@@ -1,5 +1,4 @@
 
-
 //alert('si conecta!');
 
 //toggle de la burger 
@@ -167,7 +166,6 @@ document.getElementById('b9').onclick = function(){
         $check9 = 'mas';
     }
 };
-
 
 
 

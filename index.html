@@ -29,10 +29,10 @@
                     <a class="no-underline font-semibold text-xl" href="/#como-funciona">Cómo Funciona</a>
                 </li>
                 <li class="border-t-4 border-transparent hover:border-white mx-6 px-4 h-16 py-3">
-                    <a class="no-underline font-semibold text-xl" href="/shops">Comercios</a>
+                    <a class="no-underline font-semibold text-xl" href="/shops.html">Comercios</a>
                 </li>
                 <li class="border-t-4 border-transparent hover:border-white mx-6 px-4 h-16 py-3">
-                    <a class="no-underline font-semibold text-xl" href="">Contáctanos</a>
+                    <a class="no-underline font-semibold text-xl" href="/#contacto">Contáctanos</a>
                 </li>
             </ul>
         </div>
@@ -280,7 +280,7 @@
         </div>
     </section>
 
-    <section class="bg-section2 h-auto">
+    <section id="contacto" class="bg-section2 h-auto">
         <div class="container items-center flex flex-col py-16">
 
             <div class="mb-6 text-center">
@@ -289,7 +289,7 @@
             <div class="bg-white rounded w-full lg:w-2/3 py-12 rounded-lg">
                 <form action="">
 
-                    <div class="mb-4 flex flex-row">
+                    <div class="mb-4 lg:flex flex-row">
                         <div class="flex flex-col px-6 w-full lg:w-1/2">
                             <label class="txt-section4 mb-4 font-bold" for="">Nombre</label>
                             <input class="border-2 border-indigo-300 p-2" placeholder="Cameron Rogers" type="text">
@@ -300,7 +300,7 @@
                         </div>
                     </div>
 
-                    <div class="mb-10 flex flex-row">
+                    <div class="mb-10 lg:flex flex-row">
                             <div class="flex flex-col px-6 w-full lg:w-1/2">
                             <label class="txt-section4 mb-4 font-bold" for="">Teléfono</label>
                             <input class="border-2 border-indigo-300 p-2" placeholder="Cameron Rogers" type="text">
@@ -321,27 +321,31 @@
     </section>
 
 
-    <section class="bg-black">
-        <footer class="w-full text-white">
+    <section class="bg-black py-8">
+        <footer class="container mx-auto px-4">
 
-            <div class="w-full justify-between flex flex-row">
-                <div class="c">
+            <div class="justify-between items-center mb-8 flex flex-row">
+                <div class="">
                     <a href="/">
-                        <img class="mx-4" src="images/logo-comerce.svg" alt="">
+                        <img class="" src="images/logo-comerce.svg" alt="">
                     </a>
                 </div>
-                <div class="c">
-                    f
+                <div class="">
+                    <a href="/">
+                        <i class="fab fa-facebook-f text-white text-2xl"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="w-full justify-between flex flex-row">
-                <div class="c">
-                    <p class="c">© Tap. Todos los derechos reservados, 2019</p>
-                </div>
+            <div class="w-full xl:justify-between text-center xl:flex flex-row text-gray-500">
                 <div class="">
-                        Terminos y Condiciones 
-                        Políticas de Privacidad
+                    <p class="">© Tap. Todos los derechos reservados, 2019</p>
+                </div>
+                
+                <div class="xl:flex-none xl:flex-row flex flex-col">
+                    <a href="">Terminos y Condiciones </a>
+                    <div class="hidden xl:inline w-1 border bg-gray-500 h-6 mx-4"></div>
+                    <a href="">Políticas de Privacidad</a>
                 </div>
             </div>
 
