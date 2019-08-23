@@ -3,7 +3,7 @@
 
 if ($_POST) {
     
-    echo "Succes!";
+    //echo "Succes!";
 
     //$destino = "salvadordeleon2@gmail.com";
 
