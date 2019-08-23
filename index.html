@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> <!-- JQuery -->
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="main-custom.css">
-
 
 
     <title>Comerce App</title>
@@ -180,7 +183,7 @@
 
                 <ul id="mainlist" class="lg:ml-40 ml-24">
                     <li class="">
-                        <button id="b1" onclick="mostrar" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>¿Que es Tap the App?</button>
+                        <button id="b1" class="font-bold p-4"><i class="fas fa-plus txt-section4 pr-3" ></i>¿Que es Tap the App?</button>
                         
                         <ul id="bl1" class="hidden">
                             <li>
@@ -280,6 +283,12 @@
         </div>
     </section>
 
+
+
+
+
+
+
     <section id="contacto" class="bg-section2 h-auto">
         <div class="container items-center flex flex-col py-16">
 
@@ -287,27 +296,31 @@
                 <h4 class="font-bold text-4xl text-black mb-4">Contáctanos</h4>
             </div>
             <div class="bg-white rounded w-full lg:w-2/3 py-12 rounded-lg">
-                <form action="">
+                <form id="formc" action="web-message.php" method="POST">
 
                     <div class="mb-4 lg:flex flex-row">
                         <div class="flex flex-col px-6 w-full lg:w-1/2">
                             <label class="txt-section4 mb-4 font-bold" for="">Nombre</label>
-                            <input class="border-2 border-indigo-300 p-2" placeholder="Cameron Rogers" type="text">
+                            <input id="nomb" name="nombre" class="border-2 border-indigo-300 p-2" placeholder="Cameron Rogers" type="text">
+                            <label id="l-nomb" class="text-sm text-red-500 hidden" for="">El campo nombre es obligatorio</label>
                         </div>
                         <div class="flex flex-col px-6 w-full lg:w-1/2">
                             <label class="txt-section4 mb-4 font-bold" for="">Mensaje</label>
-                            <input class="border-2 border-indigo-300 p-2" placeholder="Cameron Rogers" type="text">
+                            <input id="mens" name="mensaje" class="border-2 border-indigo-300 p-2" placeholder="Escribe tu consulta..." type="text">
+                            <label id="l-mens" class="text-sm text-red-500 hidden" for="">El campo mensaje es obligatorio</label>
                         </div>
                     </div>
 
                     <div class="mb-10 lg:flex flex-row">
                             <div class="flex flex-col px-6 w-full lg:w-1/2">
                             <label class="txt-section4 mb-4 font-bold" for="">Teléfono</label>
-                            <input class="border-2 border-indigo-300 p-2" placeholder="Cameron Rogers" type="text">
+                            <input id="tel" name="telefono" class="border-2 border-indigo-300 p-2" placeholder="7777777" type="text">
+                            <label id="l-tel" class="text-sm text-red-500 hidden" for="">El campo telefono es obligatorio</label>
                         </div>
                         <div class="flex flex-col px-6 w-full lg:w-1/2">
                             <label class="txt-section4 mb-4 font-bold" for="">Correo Electrónico</label>
-                            <input class="border-2 border-indigo-300 p-2" placeholder="Cameron Rogers" type="text">
+                            <input id="mail" name="mail" class="border-2 border-indigo-300 p-2" placeholder="Ccmeron@hotmail.com" type="text">
+                            <label id="l-mail" class="text-sm text-red-500 hidden" for="">El campo mensaje es obligatorio</label>
                         </div>
                     </div>
                     <div class="w-full flex flex-col items-center">
@@ -319,6 +332,17 @@
 
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
     <section class="bg-black py-8">

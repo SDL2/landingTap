@@ -1,5 +1,5 @@
 
-//alert('si conecta!');
+//alert("Bienvenid@ esta es una version didactica de \nhttps://www.taptheapp.tech \nEsta intenta replicar las mayoria de funciones responsivas de la originalen en sus multiples secciones. \nAdemas de ciertas funcionalidades con Javascript como las respuestas desplegables de la seccion FAQ'S, el togle de la amburguesa y las validaciones del formulario de contacto y por ultimo el envio de un correo electronico por medio de PHP al correo ingresado en el formulario para validar su funcionamiento. \n(si no se tiene correctamente configurado el envio de mail en su php no funcionara, yo lo probe en mi host real con exito)");
 
 //toggle de la burger 
 document.getElementById('nav-toggle').onclick = function(){
@@ -7,12 +7,69 @@ document.getElementById('nav-toggle').onclick = function(){
     $togflex.classList.toggle('flex');
 
     document.getElementById("nav-content").classList.toggle("hidden");
-    
 };
 
 
-        ////* LO SIENTO POR EL EXCESO DE REPETICIONES,, cuando sepa mas lo mejoro =D *////
 
+
+
+$('#formc').submit(function(f){
+
+    
+    alert('entramos form function');
+    
+        var mensaje = $('#mens').val();
+        var mail = $('#mail').val();
+        $('#mail').val(mail.replace(/ /g, ''));
+    
+        var telefono = $('#tel').val();
+        var nombre = $('#nomb').val();
+    
+        if (nombre.length < 3){
+            f.preventDefault();
+            $('#l-nomb').removeClass('hidden');
+            errorM = 1;
+        } else {
+            $('#l-nomb').addClass('hidden');
+        }
+
+
+        if (mensaje.length < 15 || mensaje.indexOf(' ') == -1) {
+            f.preventDefault();
+            $('#l-mens').removeClass('hidden');
+            errorM = 1;
+            alert('entramos if');
+        } else {
+            $('#l-mens').addClass('hidden');
+        }
+
+
+        if (telefono.length < 8){
+            f.preventDefault();
+            $('#l-tel').removeClass('hidden');
+            errorM = 1;
+        } else {
+            $('#l-tel').addClass('hidden');
+        }
+
+
+        if (mail.indexOf('@', 1) == -1 || mail.indexOf('.', 4) == -1){
+            f.preventDefault();
+            $('#l-mail').removeClass('hidden');
+            errorM = 1;
+        } else {
+            $('#l-mail').addClass('hidden');
+        }
+    
+    
+    
+    });
+
+    
+
+
+
+        ////* LO SIENTO POR EL EXCESO DE REPETICIONES,, cuando sepa mas lo mejoro =D *////
 
 //toggle de hiden e icono boton 1
 var $check1 = 'mas';
