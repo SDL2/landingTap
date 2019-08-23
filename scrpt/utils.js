@@ -1,5 +1,5 @@
 
-alert("Bienvenid@ esta es una version didactica de \nhttps://www.taptheapp.tech \nEsta intenta replicar las mayoria de funciones responsivas de la originalen en sus multiples secciones. \nAdemas de ciertas funcionalidades con Javascript como las respuestas desplegables de la seccion FAQ'S, el togle de la amburguesa y las validaciones del formulario de contacto y por ultimo el envio de un correo electronico por medio de PHP al correo ingresado en el formulario para validar su funcionamiento. \n(si no se tiene correctamente configurado el envio de mail en su php no funcionara, yo lo probe en mi host real con exito)");
+//alert("Bienvenid@ esta es una version didactica de \nhttps://www.taptheapp.tech \nEsta intenta replicar las mayoria de funciones responsivas de la original en en sus multiples secciones. \nAdemas de ciertas funcionalidades con Javascript como las respuestas desplegables de la seccion FAQ'S, el togle de la amburguesa y las validaciones del formulario de contacto y por ultimo el envio de un correo electronico por medio de PHP al correo ingresado en el formulario para validar su funcionamiento. \n(si no se tiene correctamente configurado el envio de mail en su php no funcionara, yo lo probe en mi host real con exito)");
 
 //toggle de la burger 
 document.getElementById('nav-toggle').onclick = function(){
